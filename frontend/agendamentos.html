@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamentos</title>
+  </head>
+  <body>
+    <h1>Agendamentos</h1>
+    <button onclick="voltar()">Voltar</button>
+    <button onclick="logout()">Sair</button>
+    <hr />
+    <!-- TABELA (o JavaScript preenche o tbody) -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Professor</th>
+          <th>Data</th>
+          <th>Horário</th>
+          <th>Filho</th>
+          <th>Nascimento</th>
+          <th>Nível</th>
+          <th>Responsável</th>
+          <th>CPF</th>
+          <th>E-mail</th>
+          <th>Telefone</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela"></tbody>
+    </table>
+    <!-- SCRIPTS: sempre no fim do body, nesta ordem -->
+    <script src="api.js"></script>
+    <script src="sessao.js"></script>
+    <script src="agendamentos.js"></script>
+  </body>
+</html>

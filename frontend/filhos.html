@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filhos</title>
+  </head>
+  <body>
+    <h1>Cadastro de Filhos</h1>
+    <button onclick="voltar()">Voltar</button>
+    <button onclick="logout()">Sair</button>
+    <hr />
+    <!-- 1) FORMULÁRIO -->
+    <label>Responsável</label><br />
+    <select id="id_responsavel">
+      <option value="">Selecione o responsável</option></select
+    ><br /><br />
+
+    <label>Nome</label><br />
+    <input type="text" id="Nome" /><br /><br />
+
+    <label>Data de nascimento</label><br />
+    <input type="date" id="dataNascimento" /><br /><br />
+
+    <label>Nível de natação</label><br />
+    <select id="nivelNatacao">
+      <option value="">Selecione o nível</option>
+      <option value="Iniciante">Iniciante</option>
+      <option value="Intermediario">Intermediário</option>
+      <option value="Avancado">Avançado</option></select
+    ><br /><br />
+
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <!-- 4) SCRIPTS: sempre no fim do body, nesta ordem -->
+    <script src="api.js"></script>
+    <script src="sessao.js"></script>
+    <script src="filhos.js"></script>
+  </body>
+</html>

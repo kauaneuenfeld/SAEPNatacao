@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+const mysql = require("mysql2");
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -8,14 +8,13 @@ const connection = mysql.createConnection({
   dateStrings: true,
 });
 
-
 connection.connect((erro) => {
-if (erro) {
-    console.log('Erro ao conectar:', erro);
+  if (erro) {
+    console.log("Erro ao conectar:", erro);
     return;
-    }
+  }
 
-console.log('Banco conectado com sucesso!');
+  console.log("Banco conectado com sucesso!");
 });
 
 module.exports = connection;
