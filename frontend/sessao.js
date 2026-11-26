@@ -3,14 +3,14 @@ const expira = localStorage.getItem("expira");
 
 if (!usuario) {
   window.location.href = "login.html"; //niguem logado
-} else if (!expira || Date.now() > number(expira)) {
+} else if (!expira || Date.now() > Number(expira)) {
   alert("Sua sessao expirou, faça login novamente");
   logout();
 }
 
 setInterval(() => {
   //confere a cada 30 segundos
-  if (Date.now() > number(expira)) {
+  if (Date.now() > Number(expira)) {
     alert("Sua sessao expirou, faça login novamente");
     logout();
   }

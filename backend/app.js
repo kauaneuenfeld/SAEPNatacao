@@ -17,7 +17,7 @@ server.post("/login", (req, res) => {
 
   connection.query(sql, [login, senha], (erro, resultados) => {
     if (erro)
-      return res.status(500).json({ sucesso: false, mensagem: erro.mensagem });
+      return res.status(500).json({ sucesso: false, mensagem: erro.message });
 
     if (resultados.length === 0) {
       return res.json({ sucesso: false, mensagem: "login ou senha invalidos" });
